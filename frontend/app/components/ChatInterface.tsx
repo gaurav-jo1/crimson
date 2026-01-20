@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { PanelRightOpen } from "lucide-react";
-import Image from "next/image";
+
 import { AnimatePresence } from "framer-motion";
 import ReactMarkdown from "react-markdown";
 
@@ -113,15 +113,9 @@ export default function ChatInterface() {
           {messages.length === 0 ? (
             // Initial State with Logo
             <div className="flex-1 flex flex-col items-center justify-center p-4">
-              <div className="relative w-32 h-32 mb-8 animate-in fade-in duration-700 ease-out slide-in-from-bottom-4">
-                <Image
-                  src="/Crimson_logo_black.svg"
-                  alt="Crimson Logo"
-                  fill
-                  className="object-contain opacity-90"
-                  priority
-                />
-              </div>
+              <h1 className="text-5xl font-extrabold tracking-tight mb-8 animate-in fade-in duration-700 ease-out slide-in-from-bottom-4 bg-linear-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent drop-shadow-sm">
+                PaperAI
+              </h1>
             </div>
           ) : (
             // Chat Messages
@@ -151,7 +145,7 @@ export default function ChatInterface() {
                 {isLoading && (
                   <div className="flex justify-start">
                     <div className="text-gray-400 text-sm animate-pulse ml-1">
-                      Crimson thinking...
+                      PaperAI thinking...
                     </div>
                   </div>
                 )}
