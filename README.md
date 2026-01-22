@@ -2,6 +2,8 @@
 
 PaperAI is a powerful multi-file RAG (Retrieval-Augmented Generation) system designed to provide intelligent answers based on your own collection of documents. It allows users to organize files into folders and selectively use them as a knowledge base for LLM-powered insights.
 
+https://github.com/user-attachments/assets/82c29228-7d01-4178-a94c-81fadada7394
+
 ## 🚀 Features
 
 - **Multi-File RAG**: Upload and index multiple PDF documents simultaneously.
